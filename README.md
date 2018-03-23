@@ -12,7 +12,9 @@ Based on NodeMCU EXP8266 ESP-12E board http://amzn.to/2pxwlC0, OLED Module http:
 
 Required files/software:
 diymall OLED: http://www.diymalls.com/files/IIC_OLED.zip username/password diymall
+
 Arduino IDE: https://www.arduino.cc/en/Main/Software
+
 ESP8266 addon: https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/installing-the-esp8266-arduino-addon
 
 The intention of this project is to have a DHT22 sensor contstantly monitor the temperature and humidity in a room and send an email/SMS
