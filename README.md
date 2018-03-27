@@ -9,3 +9,4 @@ installation will be utilized and the readings shall be logged to an on-site mys
 
 Releases
 v.1 - Basic operation reporting the temperature and humidity to the server and relay to app
+v.1.1 - Added serial -> terminal redirection
