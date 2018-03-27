@@ -29,8 +29,8 @@ SimpleTimer timer;
 void send_sensor()
 {
  float h = dht.readHumidity();
- //float t = dht.readTemperature(); // or dht.readTemperature(true) for Fahrenheit
- float t = dht.readTemperature(true); // or dht.readTemperature() for Celsius
+ //float t = dht.readTemperature(); // Celsius 
+ float t = dht.readTemperature(true); // Fahrenheit
 
  if (isnan(h) || isnan(t)) {
  Serial.println("Failed to read from DHT sensor!");
