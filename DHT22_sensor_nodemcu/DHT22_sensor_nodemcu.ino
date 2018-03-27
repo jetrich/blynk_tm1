@@ -23,11 +23,11 @@ IPAddress blynk_server(X,X,X,X); // IP Address for local blynk server
 DHT dht(DHTPIN, DHTTYPE);
 SimpleTimer timer;
 
-// This function sends Arduino's up time every second to Virtual Pin (5, 6, 7 &amp;amp;amp;amp;amp;amp; 8).
-// In the app, Widget's reading frequency should be set to PUSH. This means
-// that you define how often to send data to Blynk App.
 void send_sensor()
 {
+ // This function sends Arduino's up time every second to Virtual Pin (5, 6, 7, and 8).
+ // In the app, Widget's reading frequency should be set to PUSH. This means
+ // that you define how often to send data to Blynk App.
  float h = dht.readHumidity();
  //float t = dht.readTemperature(); // Celsius 
  float t = dht.readTemperature(true); // Fahrenheit
@@ -45,7 +45,8 @@ void send_sensor()
  Serial.print(F("T: ")); Serial.print(t); Serial.print(F(", H: ")); Serial.println(h);
  }
 
-void sent_serial() {
+void sent_serial()
+{
   // Sent serial data to Blynk terminal - Unlimited string read
   String content = ""; // null string constant (empty string)
   char character;
