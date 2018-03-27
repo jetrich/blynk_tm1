@@ -42,7 +42,7 @@ void send_sensor()
  Blynk.virtualWrite(V6, t); // Temperature for gauge
  Blynk.virtualWrite(V7, h); // Humidity for graph
  Blynk.virtualWrite(V8, t); // Temperature for graph
- Serial.print(F("T: ")); Serial.print(t); Serial.print(F(", H: ")); Serial.println(h);
+ Serial.print(F("T: ")); Serial.print(t); Serial.print(F(", H: ")); Serial.println(h); // Feedback via serial
  }
 
 void sent_serial()
