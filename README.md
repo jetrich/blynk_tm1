@@ -21,4 +21,4 @@ v.4   - add email notification on high temperature</br>
 In order for the terminal redirection to occur correctly you will need to ensure that the RX and TX pins are physically jumpered. Failure to do so will negate the function.
 
 <b>Known issues:</b></br>
-If database connection fails, the 8266 will cease function.</br>
+If database connection fails, the 8266 will cease function until reset.
