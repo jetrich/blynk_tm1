@@ -13,5 +13,9 @@ installation will be utilized and the readings shall be logged to an on-site mys
 <b>Releases:</b></br>
 v.1   - Basic operation reporting the temperature and humidity to the server and relay to app</br>
 v.1.1 - Added serial -> terminal redirection, clean up text and variables</br>
-v.2   - add mysql database logging</br>
+v.2   - add mysql database logging, debugging</br>
 v.3   - add OLED</br>
+v.4   - add email notification on high temperature</br>
+
+
+In order for the terminal redirection to occur correctly you will need to ensure that the RX and TX pins are physically jumpered. Failure to do so will negate the function.
